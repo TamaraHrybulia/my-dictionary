@@ -19,7 +19,7 @@ export default function App() {
         <a
           href="https://github.com/TamaraHrybulia/my-dictionary"
           target="_blank"
-          rel="norefferer"
+          rel="noreferrer"
         >
           {" "}
           open-sourced on Github{" "}
@@ -28,7 +28,7 @@ export default function App() {
         <a
           href="https://github.com/TamaraHrybulia/my-dictionary"
           target="_blank"
-          rel="norefferer"
+          rel="noreferrer"
         >
           hosted on Netlify{" "}
         </a>
