@@ -12,7 +12,7 @@ export default function App() {
         <h1> English Dictionary </h1>{" "}
       </header>
       <main>
-        <Dictionary />
+        <Dictionary defaultWord="mother" />
       </main>
       <footer>
         Coded by Tamara Hrybulia and is{" "}

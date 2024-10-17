@@ -1,9 +1,10 @@
 import React from "react";
+
 import Phoenetic from "./Phoenetic";
 import Origin from "./Origin";
 import Meanings from "./Meanings";
 
-export default function Results() {
+export default function Results(props) {
   return (
     <ul>
       <li>
