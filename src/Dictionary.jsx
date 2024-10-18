@@ -5,7 +5,7 @@ import Results from "./Results";
 export default function Dictionary(props) {
   let [keyWord, setKeyword] = useState(props.defaultWord);
   let [loaded, setLoaded] = useState(false);
-  let [results, setResults] = useState();
+  let [results, setResults] = useState(null);
 
   function load() {
     setLoaded(true);
@@ -13,8 +13,8 @@ export default function Dictionary(props) {
   }
 
   function showResults(response) {
-    console.log(response.data);
-    setResults(response.data[0]);
+    // console.log(response.data);
+    setResults(response.data);
   }
 
   function searchWord() {
