@@ -13,7 +13,7 @@ export default function Dictionary(props) {
   }
 
   function showResults(response) {
-    // console.log(response.data);
+    console.log(response.data);
     setResults(response.data);
   }
 
