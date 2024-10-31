@@ -3,6 +3,7 @@ import { createClient } from "pexels";
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
+import "./Dictionary.css";
 
 export default function Dictionary(props) {
   let [keyWord, setKeyword] = useState(props.defaultWord);
@@ -50,16 +51,22 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <form onSubmit={handleSearch}>
-          <input
-            type="search"
-            placeholder="type a word in English"
-            onChange={updateKeyWord}
-          ></input>
-          <input
-            type="submit"
-            value="search"
-            className="btn btn-primary"
-          ></input>
+          <div className="row">
+            <div className="col-9">
+              <input
+                type="search"
+                placeholder="type a word in English"
+                onChange={updateKeyWord}
+              ></input>
+            </div>
+            <div className="col-3">
+              <input
+                type="submit"
+                value="search"
+                className="btn btn-primary"
+              ></input>
+            </div>
+          </div>
         </form>
         <Results results={results} />
         <Photos photos={pexelsPhotos} />
