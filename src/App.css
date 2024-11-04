@@ -7,7 +7,7 @@ body {
 }
 
 .App .dictionary-app {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -21,9 +21,7 @@ body {
 }
 
 .App h1 {
-  /* color: #cbd3db; */
   color: rgb(87, 209, 0);
-
   font-weight: 700;
   font-style: italic;
   margin: 0;

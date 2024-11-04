@@ -1,3 +1,33 @@
 .Dictionary {
   background-color: #fff;
+  padding-top: 25px;
+}
+
+.Dictionary .form-container {
+  margin: 0 auto;
+  border-radius: 8px;
+  max-width: 600px;
+  background-color: #f7f7f7;
+  border: 2px solid #eaeaea;
+  height: 60px;
+  position: relative;
+}
+
+.Dictionary .word-input {
+  background-color: #f7f7f7;
+  border: none;
+  margin-top: 15px;
+  margin-left: 15px;
+  outline: none;
+}
+
+.Dictionary .btn {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  background-color: rgb(87, 203, 4);
+  border: 1px solid rgb(78, 170, 8);
+  color: #e8fcd1;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px rgb(65, 147, 2);
 }
