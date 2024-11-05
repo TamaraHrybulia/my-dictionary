@@ -15,11 +15,15 @@ export default function Phonetic(props) {
     if (props.phonetics?.[index]?.audio) {
       return (
         <div key={index}>
-          <CountrySign
-            audio={props.phonetics[index].audio}
-            keyWord={props.keyWord}
-          />
-          <button onClick={start}> Play </button>
+          <div>
+            <CountrySign
+              audio={props.phonetics[index].audio}
+              keyWord={props.keyWord}
+            />
+          </div>
+          <div>
+            <button onClick={start}> Play </button>
+          </div>
           <span>{props.phonetics[index].text}</span>
         </div>
       );

@@ -2,12 +2,15 @@ import React from "react";
 import Phonetic from "./Phonetic";
 import Meanings from "./Meanings";
 
+import "./Results.css";
+
 export default function Results(props) {
   if (props.results) {
     return (
       <div className="Results">
         <section>
           <h2>{props.results[0].word}</h2>
+          <hr />
 
           <Phonetic
             phonetics={props.results[0].phonetics}

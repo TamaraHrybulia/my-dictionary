@@ -1,24 +1,29 @@
 import React from "react";
+import "./CountrySign.css";
 
 export default function CountrySign(props) {
-  let sign;
+  let code = require("./flags/usa.png");
 
   let audioUrl = props.audio;
 
   switch (true) {
     case audioUrl.includes(`${props.keyWord.trim()}-us.mp3`):
-      sign = "US";
+      code = require("./flags/usa.png");
       break;
     case audioUrl.includes(`${props.keyWord.trim()}-au.mp3`):
-      sign = "AU";
+      code = require("./flags/australia.png");
       break;
     case audioUrl.includes(`${props.keyWord.trim()}-uk.mp3`):
-      sign = "UK";
+      code = require("./flags/unitedKindom.png");
       break;
     case audioUrl.includes(`${props.keyWord.trim()}-ca.mp3`):
-      sign = "CA";
+      code = require("./flags/canada.png");
       break;
   }
 
-  return sign;
+  return (
+    <div className="CountrySign">
+      <img src={code} alt="country flag icon" />
+    </div>
+  );
 }
