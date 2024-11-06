@@ -1,4 +1,6 @@
 .CountrySign img {
-  width: 54px;
-  height: 28px;
+  margin-top: 7px;
+  width: 30px;
+  height: 24px;
+  box-shadow: 1px 1px 1px #757575;
 }

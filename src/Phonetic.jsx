@@ -1,5 +1,6 @@
 import React from "react";
 import CountrySign from "./CountrySign";
+import "./Phonetic.css";
 
 export default function Phonetic(props) {
   return props.phonetics.map(function (phonetic, index) {
@@ -14,17 +15,21 @@ export default function Phonetic(props) {
 
     if (props.phonetics?.[index]?.audio) {
       return (
-        <div key={index}>
-          <div>
+        <div key={index} className="Phonetic">
+          <span className="phonetic-item">
             <CountrySign
               audio={props.phonetics[index].audio}
               keyWord={props.keyWord}
             />
-          </div>
-          <div>
-            <button onClick={start}> Play </button>
-          </div>
-          <span>{props.phonetics[index].text}</span>
+          </span>
+
+          <span className="phonetic-item text">
+            {props.phonetics[index].text}
+          </span>
+          <button className="phonetic-item" onClick={start}>
+            {" "}
+            🔊 Listen{" "}
+          </button>
         </div>
       );
     }

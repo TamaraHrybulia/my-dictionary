@@ -22,8 +22,8 @@ export default function CountrySign(props) {
   }
 
   return (
-    <div className="CountrySign">
+    <span className="CountrySign">
       <img src={code} alt="country flag icon" />
-    </div>
+    </span>
   );
 }
