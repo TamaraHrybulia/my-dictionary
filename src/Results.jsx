@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import Phonetic from "./Phonetic";
 import Meanings from "./Meanings";
 
 import "./Results.css";
 
 export default function Results(props) {
+  let [currentMeaningIndex, setCurrentMeaningIndex] = useState(0);
+
+  function slideResultNext() {
+    setCurrentMeaningIndex((prevIndex) =>
+      prevIndex === props.results[0].meanings.length - 1 ? 0 : prevIndex + 1
+    );
+  }
+  function slideResultPrev() {
+    setCurrentMeaningIndex(function (prevIndex) {
+      let newIndex = prevIndex - 1;
+
+      return newIndex === -1 ? props.results[0].meanings.length - 1 : newIndex;
+    });
+  }
   if (props.results) {
     return (
       <div className="Results">
@@ -16,17 +30,17 @@ export default function Results(props) {
             phonetics={props.results[0].phonetics}
             keyWord={props.results[0].word}
           />
+          <hr />
         </section>
 
         <section>
-          <h2>Meanings</h2>
-          {props.results[0].meanings.map(function (meaning, index) {
-            return (
-              <section key={index}>
-                <Meanings meaning={meaning} />
-              </section>
-            );
-          })}
+          <button onClick={slideResultPrev}>prev</button>
+          <button onClick={slideResultNext}>next</button>
+          <div>
+            <Meanings
+              meaning={props.results[0].meanings[currentMeaningIndex]}
+            />
+          </div>
         </section>
       </div>
     );
