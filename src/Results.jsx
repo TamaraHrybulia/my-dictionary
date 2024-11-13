@@ -22,7 +22,7 @@ export default function Results(props) {
   if (props.results) {
     return (
       <div className="Results">
-        <section>
+        <section className="phoneticSection">
           <h2>{props.results[0].word}</h2>
           <hr />
 
@@ -30,12 +30,18 @@ export default function Results(props) {
             phonetics={props.results[0].phonetics}
             keyWord={props.results[0].word}
           />
-          <hr />
+          <hr className="bottomLine" />
         </section>
 
         <section>
-          <button onClick={slideResultPrev}>prev</button>
-          <button onClick={slideResultNext}>next</button>
+          <div className="arrowButtons">
+            <button className="prev" onClick={slideResultPrev}>
+              ◀
+            </button>
+            <button className="next" onClick={slideResultNext}>
+              ▶
+            </button>
+          </div>
           <div>
             <Meanings
               meaning={props.results[0].meanings[currentMeaningIndex]}

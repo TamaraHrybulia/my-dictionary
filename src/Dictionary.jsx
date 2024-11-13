@@ -34,7 +34,7 @@ export default function Dictionary(props) {
       "rIfpdtEJ19JDshrjT8MNiQmdG3GiBWFokO1edu2SXtxbSnNIofR4hIxC"
     );
     client.photos
-      .search({ query: keyWord, per_page: 3 })
+      .search({ query: keyWord, per_page: 9, size: "small" })
       .then(showPexelsPhotos);
   }
 
@@ -50,7 +50,7 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="Dictionary ">
-        <div className="form-container">
+        <section className="form-container">
           <form onSubmit={handleSearch}>
             <input
               className="word-input"
@@ -59,9 +59,9 @@ export default function Dictionary(props) {
               onChange={updateKeyWord}
             ></input>
 
-            <input type="submit" value="search" className="btn"></input>
+            <input type="submit" value="search" className="mainBtn"></input>
           </form>
-        </div>
+        </section>
         <Results results={results} />
         <Photos photos={pexelsPhotos} />
       </div>

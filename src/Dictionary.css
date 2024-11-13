@@ -1,12 +1,16 @@
-.Dictionary {
+/* .Dictionary {
   background-color: #fff;
   padding-top: 25px;
+} */
+
+.Dictionary section {
+  margin: 0px 70px 35px 70px;
 }
 
 .Dictionary .form-container {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   border-radius: 8px;
-  max-width: 600px;
+  max-width: 800px;
   background-color: #f7f7f7;
   border: 2px solid #eaeaea;
   height: 60px;
@@ -21,7 +25,7 @@
   outline: none;
 }
 
-.Dictionary .btn {
+.Dictionary .mainBtn {
   position: absolute;
   top: 9px;
   right: 10px;
@@ -30,4 +34,23 @@
   color: #e8fcd1;
   border-radius: 10px;
   box-shadow: 0 3px 3px rgb(65, 147, 2);
+  height: 2em;
+}
+
+.arrowButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev,
+.next {
+  border-radius: 30%;
+  background-color: transparent;
+  color: #3fbbd8;
+  border: 1px solid #3fbbd8;
+  /* color: gray; */
+  font-size: 12px;
+  /* line-height: 30px; */
+  box-shadow: 1px 1px 1px #3fbbd8;
+  margin-top: 18px;
 }

@@ -36,6 +36,13 @@ export default function App() {
             >
               hosted on Netlify{" "}
             </a>
+            <a
+              href="https://www.pexels.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Photos provided by Pexels
+            </a>
           </footer>
         </div>
       </div>

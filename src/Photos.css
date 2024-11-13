@@ -1,0 +1,19 @@
+.Photos .slider {
+  width: 660px;
+  height: 200px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.Photos .sliderLine {
+  height: 130px;
+  width: 1170px;
+  display: flex;
+  position: relative;
+  transition: all 250ms ease-in-out;
+}
+
+.Photos img {
+  width: 220px;
+  height: 200px;
+}

@@ -1,11 +1,12 @@
 import React from "react";
+import "./Synonyms.css";
 
 export default function Synonyms(props) {
   if (props.data.length > 0)
     return (
-      <div>
+      <div className="Synonyms">
         <h4>Synonyms</h4>
-        {props.data}
+        <span className="synonymsExample"> {props.data} </span>
       </div>
     );
 }

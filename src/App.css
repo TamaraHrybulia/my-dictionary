@@ -25,6 +25,12 @@ body {
   justify-content: center;
 }
 
+.App main {
+  background-color: #fff;
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
 .App h1 {
   color: var(--main-color);
   font-weight: 700;
