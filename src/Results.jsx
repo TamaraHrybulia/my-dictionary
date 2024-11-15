@@ -47,6 +47,7 @@ export default function Results(props) {
               meaning={props.results[0].meanings[currentMeaningIndex]}
             />
           </div>
+          <hr className="bottomLine" />
         </section>
       </div>
     );

@@ -1,7 +1,7 @@
 import React from "react";
 import Dictionary from "./Dictionary";
 import "bootstrap/dist/css/bootstrap.css";
-import logo from "./3d-cartoon-apple.png";
+import logo from "./pensil2.png";
 
 import "./App.css";
 
@@ -12,7 +12,7 @@ export default function App() {
         <div className="dictionary-app">
           <header>
             {" "}
-            <h1> English Dictionary </h1>{" "}
+            <h1> English Dictionary</h1>
             <img src={logo} className="logo" alt="cartoon-apple" />
           </header>
           <main>
