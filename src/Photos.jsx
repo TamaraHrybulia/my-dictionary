@@ -7,18 +7,18 @@ export default function Photos(props) {
   function slidePhotoPrev() {
     setPosition((currentPosition) => {
       if (currentPosition >= 0) {
-        return -1320;
+        return 0;
       }
-      return currentPosition + 660;
+      return currentPosition + 684;
     });
   }
 
   function slidePhotoNext() {
     setPosition((currentPosition) => {
-      if (currentPosition < -1100) {
-        return 0;
+      if (currentPosition <= -1368) {
+        return -1368;
       }
-      return currentPosition - 660;
+      return currentPosition - 684;
     });
   }
 
@@ -39,7 +39,7 @@ export default function Photos(props) {
             {props.photos.map(function (photo, index) {
               return (
                 <span className="photoItem" key={index}>
-                  <img src={photo.src.medium} alt={photo.alt} />
+                  <img src={photo.src.tiny} alt={photo.alt} />
                 </span>
               );
             })}

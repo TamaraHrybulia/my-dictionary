@@ -34,7 +34,7 @@ export default function Dictionary(props) {
       "rIfpdtEJ19JDshrjT8MNiQmdG3GiBWFokO1edu2SXtxbSnNIofR4hIxC"
     );
     client.photos
-      .search({ query: keyWord, per_page: 9, size: "small" })
+      .search({ query: keyWord, per_page: 9, size: "tiny" })
       .then(showPexelsPhotos);
   }
 
