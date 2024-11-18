@@ -1,14 +1,8 @@
-/* .Dictionary {
-  background-color: #fff;
-  padding-top: 25px;
-} */
-
 .Dictionary section {
   margin: 0px 70px 35px;
 }
 
 .Dictionary .form-container {
-  /* margin: 0 auto; */
   border-radius: 8px;
   max-width: 800px;
   background-color: #f7f7f7;
@@ -29,12 +23,18 @@
   position: absolute;
   top: 9px;
   right: 10px;
-  background-color: rgb(87, 203, 4);
-  border: 1px solid rgb(78, 170, 8);
+  background-color: var(--main-color);
+  border: 1px solid var(--border-color);
   color: #e8fcd1;
   border-radius: 10px;
-  box-shadow: 0 3px 3px rgb(65, 147, 2);
+  box-shadow: 3px 3px 3px rgb(65, 147, 2);
   height: 2em;
+  transition: all 150ms ease-in-out;
+}
+
+.Dictionary .mainBtn:hover {
+  box-shadow: 4px 4px 4px rgb(65, 147, 2);
+  opacity: 0.7;
 }
 
 .arrowButtons {
@@ -46,11 +46,14 @@
 .next {
   border-radius: 30%;
   background-color: transparent;
-  color: #3fbbd8;
-  border: 1px solid #3fbbd8;
-  /* color: gray; */
+  color: rgb(92, 109, 219);
+  border: 1px solid rgb(92, 109, 219);
   font-size: 12px;
-  /* line-height: 30px; */
-  box-shadow: 1px 1px 1px #3fbbd8;
+  box-shadow: 1px 1px 1px rgb(92, 109, 219);
   margin-top: 18px;
+}
+.prev:hover,
+.next:hover {
+  opacity: 0.7;
+  box-shadow: 2px 2px 2px rgb(92, 109, 219);
 }

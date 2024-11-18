@@ -33,7 +33,7 @@ export default function Results(props) {
           <hr className="bottomLine" />
         </section>
 
-        <section>
+        <section className="resultsSection">
           <div className="arrowButtons">
             <button className="prev" onClick={slideResultPrev}>
               ◀

@@ -3,6 +3,7 @@ h4 {
   margin-top: 15px !important;
   margin-bottom: 25px !important;
   text-decoration: underline;
+  color: rgb(92, 109, 219);
 }
 
 .Meanings p {
@@ -15,7 +16,8 @@ h4 {
 }
 
 .Meanings .examples {
-  opacity: 0.8;
+  opacity: 0.9;
   font-weight: 350;
   font-size: 14px;
+  color: rgb(92, 109, 219);
 }

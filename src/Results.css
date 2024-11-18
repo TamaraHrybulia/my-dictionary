@@ -7,21 +7,9 @@
   margin-bottom: 0px;
 }
 
+.Results .resultsSection {
+  margin-bottom: 0px;
+}
 .Results .bottomLine {
   margin-bottom: 0px;
 }
-
-/* .Results .arrowButtons {
-  display: flex;
-  justify-content: space-between;
-} */
-
-/* .Results .prev,
-.next {
-  border: none;
-  background-color: transparent; */
-/* color: #3fbbd8; */
-/* color: gray;
-  font-size: 36px;
-  line-height: 36px;
-} */

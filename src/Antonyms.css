@@ -1,3 +1,8 @@
-.Antonyms .antonymsExamples {
+.Antonyms {
   font-weight: 350;
+}
+
+.Antonyms h4 {
+  color: rgb(92, 109, 219);
+  text-transform: lowercase;
 }
