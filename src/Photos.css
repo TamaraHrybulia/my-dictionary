@@ -1,5 +1,6 @@
 .Photos .slider {
-  width: 684px;
+  width: 100%;
+  max-width: 684px;
   height: 203px;
   overflow: hidden;
   margin: 0 -12px;
@@ -14,9 +15,19 @@
 }
 
 .Photos img {
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   height: 200px;
   border-radius: 15px;
   margin: 0 4px;
   box-shadow: 2px 2px 3px gray;
+}
+
+@media (max-width: 990 px) {
+  .Photos .sliderLine {
+    flex-direction: column;
+  }
+  .Photos img {
+    width: auto;
+  }
 }

@@ -23,7 +23,6 @@ export default function Dictionary(props) {
 
   function showPexelsPhotos(response) {
     setPexelsPhotos(response.photos);
-    console.log(response.photos);
   }
 
   function searchWord() {
