@@ -2,27 +2,29 @@ import React, { useState } from "react";
 import "./Photos.css";
 
 export default function Photos(props) {
-  let [position, setPosition] = useState(0);
-
-  function slidePhotoPrev() {
-    setPosition((currentPosition) => {
-      if (currentPosition >= 0) {
-        return 0;
-      }
-      return currentPosition + 684;
-    });
-  }
-
-  function slidePhotoNext() {
-    setPosition((currentPosition) => {
-      if (currentPosition <= -1368) {
-        return -1368;
-      }
-      return currentPosition - 684;
-    });
-  }
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   if (props.photos) {
+    let slidePhotoNext = () => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % props.photos.length);
+    };
+
+    let slidePhotoPrev = () => {
+      setCurrentIndex(
+        (prevIndex) =>
+          (prevIndex - 1 + props.photos.length) % props.photos.length
+      );
+    };
+
+    let getVisiblePhotos = () => {
+      let visiblePhotos = [];
+      for (let i = 0; i < 3; i++) {
+        let index = (currentIndex + i) % props.photos.length;
+        visiblePhotos.push(props.photos[index]);
+      }
+      return visiblePhotos;
+    };
+
     return (
       <section className="Photos">
         <div className="arrowButtons">
@@ -35,12 +37,15 @@ export default function Photos(props) {
         </div>
         <br />
         <div className="slider">
-          <div className="sliderLine" style={{ left: `${position}px` }}>
-            {props.photos.map(function (photo, index) {
+          <div className="sliderLine">
+            {getVisiblePhotos().map(function (photo, index) {
               return (
-                <span className="photoItem" key={index}>
-                  <img src={photo.src.tiny} alt={photo.alt} />
-                </span>
+                <img
+                  key={index}
+                  src={photo.src.tiny}
+                  alt={photo.alt}
+                  className="photoItem"
+                />
               );
             })}
           </div>
