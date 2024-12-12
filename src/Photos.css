@@ -6,10 +6,9 @@
 }
 
 .Photos .sliderLine {
-  height: 203px;
   width: 100%;
   display: flex;
-  transition: all 300ms ease-in-out;
+  transition: all 150ms ease-in-out;
   justify-content: center;
   gap: 4px;
 }
@@ -22,8 +21,24 @@
   object-fit: cover;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 992px) {
+  .Photos .slider {
+    margin-top: -20px;
+  }
+
   .Photos .sliderLine {
     flex-direction: column;
+  }
+
+  .Photos img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .Photos .slider {
+    margin-top: -10px;
   }
 }
