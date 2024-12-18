@@ -1,5 +1,5 @@
 import React from "react";
-import Dictionary from "./Dictionary";
+import Dictionary from "../Dictionary/Dictionary";
 import "bootstrap/dist/css/bootstrap.css";
 import logo from "./pensil2.png";
 
@@ -32,7 +32,7 @@ export default function App() {
             <a
               href="https://github.com/TamaraHrybulia/my-dictionary"
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
             >
               hosted on Netlify{" "}
             </a>

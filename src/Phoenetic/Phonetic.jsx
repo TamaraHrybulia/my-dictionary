@@ -1,5 +1,5 @@
 import React from "react";
-import CountrySign from "./CountrySign";
+import CountrySign from "../CountrySign/CountrySign";
 import "./Phonetic.css";
 
 export default function Phonetic(props) {

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { createClient } from "pexels";
 import axios from "axios";
-import Results from "./Results";
-import Photos from "./Photos";
+import Results from "../Results/Results";
+import Photos from "../Photos/Photos";
 import "./Dictionary.css";
 
 export default function Dictionary(props) {
@@ -17,7 +17,6 @@ export default function Dictionary(props) {
   }
 
   function showDictionaryResults(response) {
-    console.log(response.data);
     setResults(response.data);
   }
 

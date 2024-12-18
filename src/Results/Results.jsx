@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Phonetic from "./Phonetic";
-import Meanings from "./Meanings";
+import Phonetic from "../Phoenetic/Phonetic";
+import Meanings from "../Meanings/Meanings";
 
 import "./Results.css";
 
