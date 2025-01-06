@@ -1,6 +1,7 @@
 import React from "react";
 import Dictionary from "../Dictionary/Dictionary";
 import "bootstrap/dist/css/bootstrap.css";
+
 import logo from "./pensil2.png";
 
 import "./App.css";
@@ -30,7 +31,7 @@ export default function App() {
             </a>{" "}
             and is{" "}
             <a
-              href="https://github.com/TamaraHrybulia/my-dictionary"
+              href="https://strong-buttercream-19a4f0.netlify.app/"
               target="_blank"
               rel="noreferrer noopener"
             >
